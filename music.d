@@ -1,0 +1,9 @@
+.\music.o: music\music.c
+.\music.o: music\music.h
+.\music.o: music\../timer/timer.h
+.\music.o: C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h
+.\music.o: C:\Keil\ARM\RV31\INC\core_cm3.h
+.\music.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\music.o: C:\Keil\ARM\RV31\INC\core_cmInstr.h
+.\music.o: C:\Keil\ARM\RV31\INC\core_cmFunc.h
+.\music.o: C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
