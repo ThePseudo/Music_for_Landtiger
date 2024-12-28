@@ -4,10 +4,10 @@
 
 void playNote(NOTE note)
 {
-	if(note.freq != pause)
+	if(note.freq != REST)
 	{
 		reset_timer(0);
-		init_timer(0, note.freq*AMPLIFIER*VOLUME);	
+		init_timer(0, note.freq*AMPLIFIER*VOLUME);
 		enable_timer(0);
 	}
 	reset_timer(1);
