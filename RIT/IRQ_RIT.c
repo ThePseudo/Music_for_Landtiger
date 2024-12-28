@@ -25,66 +25,65 @@
 
 
 //SHORTENING UNDERTALE: TOO MANY REPETITIONS
-// Updated song with new content from the .h file
 NOTE song[] = 
 {
-    	// 1
-    	{NOTE_D3, time_16th},
-    	{NOTE_D3, time_16th},
-    	{NOTE_D4, time_8th},
-    	{NOTE_A3, time_8th},
-    	{REST, time_16th},
-   	{NOTE_GS3, time_16th},
-    	{REST, time_16th},
-    	{NOTE_G3, time_8th},
-    	{NOTE_F3, time_16th * 2},
-    	{NOTE_D3, time_16th},
-    	{NOTE_F3, time_16th},
-    	{NOTE_G3, time_16th},
-    
-    	// 2
-    	{NOTE_C3, time_16th},
-    	{NOTE_C3, time_16th},
-    	{NOTE_D4, time_8th},
-    	{NOTE_A3, time_8th},
-    	{REST, time_16th},
-    	{NOTE_GS3, time_16th},
-    	{REST, time_16th},
-    	{NOTE_G3, time_8th},
-    	{NOTE_F3, time_16th * 2},
-    	{NOTE_D3, time_16th},
-    	{NOTE_F3, time_16th},
-    	{NOTE_G3, time_16th},
-    
-    	// 3
-    	{NOTE_C3B, time_16th},
-    	{NOTE_C3B, time_16th},
-    	{NOTE_D4, time_8th},
-    	{NOTE_A3, time_8th},
-   	{REST, time_16th},
-    	{NOTE_GS3, time_16th},
-    	{REST, time_16th},
-    	{NOTE_G3, time_8th},
-    	{NOTE_F3, time_16th * 2},
-    	{NOTE_D3, time_16th},
-    	{NOTE_F3, time_16th},
-    	{NOTE_G3, time_16th},
-    
-    	// 4
-    	{NOTE_GS2, time_16th},
-    	{NOTE_GS2, time_16th},
-    	{NOTE_D4, time_8th},
-    	{NOTE_A3, time_8th},
-    	{REST, time_16th},
-    	{NOTE_GS3, time_16th},
-    	{REST, time_16th},
-    	{NOTE_G3, time_8th},
-    	{NOTE_F3, time_16th * 2},
-    	{NOTE_D3, time_16th},
-    	{NOTE_F3, time_16th},
+		// 1
+	{NOTE_D3, time_16th},
+	{NOTE_D3, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
 	{NOTE_G3, time_16th},
-    
-   	 // 5 (remaining part of the song)
+
+		// 2
+	{NOTE_C3, time_16th},
+	{NOTE_C3, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 3
+	{NOTE_C3B, time_16th},
+	{NOTE_C3B, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 4
+	{NOTE_GS2, time_16th},
+	{NOTE_GS2, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 5 (remaining part of the song)
 };
 
 void RIT_IRQHandler (void)
@@ -105,7 +104,7 @@ void RIT_IRQHandler (void)
 	{
 		disable_RIT();
 	}
-  LPC_RIT->RICTRL |= 0x1;	/* clear interrupt flag */
+	LPC_RIT->RICTRL |= 0x1;	/* clear interrupt flag */
 }
 /******************************************************************************
 **                            End Of File
