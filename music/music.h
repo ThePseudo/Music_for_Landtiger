@@ -2,13 +2,9 @@
 #define MUSIC_H
 
 #define TIMER_FREQUENCY 25000000  // 25 MHz (timer frequency)
-#define NOTE_DIVISOR 45  // Divisor for note frequency calculation
+#define NOTE_DIVISOR 45  					// Divisor for note frequency calculation
 
-// Default speed multiplier for the music playback speed
-// Default: 1.65 (speed multiplier for notes)
-#define SPEEDUP 1.6
-
-#define TIMERSCALER 1  // Timer scaler for frequency adjustments
+#define TIMERSCALER 1						// Timer scaler for frequency adjustments
 
 #define SECOND 0x17D7840 * TIMERSCALER  // Constant representing one second
 
@@ -17,6 +13,20 @@ typedef char BOOL;
 #define TRUE 1
 #define FALSE 0
 
+#define VOLUME 8
+
+#ifdef SIMULATOR
+    // In simulation mode, these values are adjusted to produce a "familiar" sound 
+    // for the human ear when played through the buzzer. This ensures the sound 
+    // resembles what it would sound like on the real hardware.
+    #define SPEEDUP        1.4f    // Increase the speed to adjust timing for simulation
+    #define AMPLIFIER      2       // Amplify the sound for better simulation
+#else
+    // Default values for real hardware playback
+    #define SPEEDUP        1.0f    // Normal speed
+    #define AMPLIFIER      1       // No amplification
+#endif
+	
 // Macro to calculate the frequency of a note /* k=1/f'*f/n  k=f/(f'*n) k=25MHz/(f'*45) */
 #define NOTE_ENTRY(note) (TIMER_FREQUENCY / ((note) * NOTE_DIVISOR)) 
 
