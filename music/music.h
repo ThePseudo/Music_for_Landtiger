@@ -23,22 +23,22 @@ typedef char BOOL;
 // Enumeration of note durations (lengths of time for each note)
 typedef enum note_durations
 {
-    	time_128th 	  = (unsigned int)(SECOND * SPEEDUP / 64.0f + 0.5),  	// 1/128 (duration for a 1/128 note)
-    	time_64th  	  = (unsigned int)(SECOND * SPEEDUP / 32.0f + 0.5),     // 1/64 (duration for a 1/64 note)
-    	time_32nd  	  = (unsigned int)(SECOND * SPEEDUP / 16.0f + 0.5),     // 1/32 (duration for a 1/32 note)
-   	time_16th  	  = (unsigned int)(SECOND * SPEEDUP / 8.0f + 0.5),      // 1/16 (duration for a 1/16 note)
-   	time_8th   	  = (unsigned int)(SECOND * SPEEDUP / 4.0f + 0.5),     	// 1/4 (duration for a 1/4 note)
-    	time_4th   	  = (unsigned int)(SECOND * SPEEDUP / 2.0f + 0.5),      // 1/2 (duration for a 1/2 note)
-    	time_whole   	  = (unsigned int)(SECOND * SPEEDUP + 0.5),             // 1 (duration for a whole note)
-    	time_double_whole = (unsigned int)(SECOND * SPEEDUP * 2.0f + 0.5),	// 2 beats (duration for a double whole note)
+	time_128th 	  = (unsigned int)(SECOND * SPEEDUP / 64.0f + 0.5),	    // 1/128 (duration for a 1/128 note)
+	time_64th  	  = (unsigned int)(SECOND * SPEEDUP / 32.0f + 0.5),     // 1/64 (duration for a 1/64 note)
+	time_32nd  	  = (unsigned int)(SECOND * SPEEDUP / 16.0f + 0.5),     // 1/32 (duration for a 1/32 note)
+	time_16th  	  = (unsigned int)(SECOND * SPEEDUP / 8.0f + 0.5),      // 1/16 (duration for a 1/16 note)
+	time_8th   	  = (unsigned int)(SECOND * SPEEDUP / 4.0f + 0.5),     	// 1/4 (duration for a 1/4 note)
+	time_4th   	  = (unsigned int)(SECOND * SPEEDUP / 2.0f + 0.5),      // 1/2 (duration for a 1/2 note)
+	time_whole 	  = (unsigned int)(SECOND * SPEEDUP + 0.5),             // 1 (duration for a whole note)
+	time_double_whole = (unsigned int)(SECOND * SPEEDUP * 2.0f + 0.5),	// 2 beats (duration for a double whole note)
 
-    	// Dotted notes (duration increased by a quarter)
-    	time_double_whole_dotted = (unsigned int)(SECOND * SPEEDUP * 2.25f + 0.5),	// 2 beats + 1/4
-   	time_whole_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 1.125f + 0.5),   	// 1 beat + 1/8
-    	time_8th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.625f + 0.5),     // 1/2 beat + 1/16
-    	time_16th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.375f + 0.5),     // 1/4 beat + 1/32
-    	time_32nd_dotted	 = (unsigned int)(SECOND * SPEEDUP * 0.25f + 0.5),  	// 1/8 beat + 1/64
-	time_64th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.1875f + 0.5), 	// 1/16 beat + 1/128
+	// Dotted notes (duration increased by a quarter)
+	time_double_whole_dotted = (unsigned int)(SECOND * SPEEDUP * 2.25f + 0.5),	// 2 beats + 1/4
+	time_whole_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 1.125f + 0.5),   	// 1 beat + 1/8
+	time_8th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.625f + 0.5),     // 1/2 beat + 1/16
+	time_16th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.375f + 0.5),     // 1/4 beat + 1/32
+	time_32nd_dotted	 = (unsigned int)(SECOND * SPEEDUP * 0.25f + 0.5),  	// 1/8 beat + 1/64
+	time_64th_dotted 	 = (unsigned int)(SECOND * SPEEDUP * 0.1875f + 0.5),    // 1/16 beat + 1/128
 } NOTE_DURATION;
 
 
@@ -47,8 +47,8 @@ typedef enum frequencies
 {
 	NOTE_B0  = NOTE_ENTRY(31),
 	NOTE_C1  = NOTE_ENTRY(33),
-    	NOTE_CS1 = NOTE_ENTRY(35),
-    	NOTE_D1  = NOTE_ENTRY(37),
+	NOTE_CS1 = NOTE_ENTRY(35),
+	NOTE_D1  = NOTE_ENTRY(37),
 	NOTE_DS1 = NOTE_ENTRY(39),
 	NOTE_E1  = NOTE_ENTRY(41),
 	NOTE_F1  = NOTE_ENTRY(44),
@@ -71,16 +71,16 @@ typedef enum frequencies
 	NOTE_AS2 = NOTE_ENTRY(117),
 	NOTE_B2  = NOTE_ENTRY(123),
 	NOTE_C3B = NOTE_ENTRY(127),
-    	NOTE_C3  = NOTE_ENTRY(131),
+	NOTE_C3  = NOTE_ENTRY(131),
 	NOTE_CS3 = NOTE_ENTRY(139),
-    	NOTE_D3  = NOTE_ENTRY(147),
-    	NOTE_DS3 = NOTE_ENTRY(156),
-    	NOTE_E3  = NOTE_ENTRY(165),
-    	NOTE_F3  = NOTE_ENTRY(175),
-    	NOTE_FS3 = NOTE_ENTRY(185),
-    	NOTE_G3  = NOTE_ENTRY(196),
-    	NOTE_GS3 = NOTE_ENTRY(208),
-    	NOTE_A3  = NOTE_ENTRY(220),
+	NOTE_D3  = NOTE_ENTRY(147),
+	NOTE_DS3 = NOTE_ENTRY(156),
+	NOTE_E3  = NOTE_ENTRY(165),
+	NOTE_F3  = NOTE_ENTRY(175),
+	NOTE_FS3 = NOTE_ENTRY(185),
+	NOTE_G3  = NOTE_ENTRY(196),
+	NOTE_GS3 = NOTE_ENTRY(208),
+	NOTE_A3  = NOTE_ENTRY(220),
 	NOTE_AS3 = NOTE_ENTRY(233),
 	NOTE_B3  = NOTE_ENTRY(247),
 	NOTE_C4  = NOTE_ENTRY(262),
@@ -115,35 +115,35 @@ typedef enum frequencies
 	NOTE_F6  = NOTE_ENTRY(1397),
 	NOTE_FS6 = NOTE_ENTRY(1480),
 	NOTE_G6  = NOTE_ENTRY(1568),
-    	NOTE_GS6 = NOTE_ENTRY(1661),
-   	NOTE_A6  = NOTE_ENTRY(1760),
-    	NOTE_AS6 = NOTE_ENTRY(1865),
-    	NOTE_B6  = NOTE_ENTRY(1976),
-    	NOTE_C7  = NOTE_ENTRY(2093),
-    	NOTE_CS7 = NOTE_ENTRY(2217),
-    	NOTE_D7  = NOTE_ENTRY(2349),
-    	NOTE_DS7 = NOTE_ENTRY(2489),
-    	NOTE_E7  = NOTE_ENTRY(2637),
-   	NOTE_F7  = NOTE_ENTRY(2794),
-    	NOTE_FS7 = NOTE_ENTRY(2960),
-    	NOTE_G7  = NOTE_ENTRY(3136),
-    	NOTE_GS7 = NOTE_ENTRY(3322),
-    	NOTE_A7  = NOTE_ENTRY(3520),
-    	NOTE_AS7 = NOTE_ENTRY(3729),
-    	NOTE_B7  = NOTE_ENTRY(3951),
-    	NOTE_C8  = NOTE_ENTRY(4186),
-    	NOTE_CS8 = NOTE_ENTRY(4435),
-    	NOTE_D8  = NOTE_ENTRY(4699),
+	NOTE_GS6 = NOTE_ENTRY(1661),
+	NOTE_A6  = NOTE_ENTRY(1760),
+	NOTE_AS6 = NOTE_ENTRY(1865),
+	NOTE_B6  = NOTE_ENTRY(1976),
+	NOTE_C7  = NOTE_ENTRY(2093),
+	NOTE_CS7 = NOTE_ENTRY(2217),
+	NOTE_D7  = NOTE_ENTRY(2349),
+	NOTE_DS7 = NOTE_ENTRY(2489),
+	NOTE_E7  = NOTE_ENTRY(2637),
+	NOTE_F7  = NOTE_ENTRY(2794),
+	NOTE_FS7 = NOTE_ENTRY(2960),
+	NOTE_G7  = NOTE_ENTRY(3136),
+	NOTE_GS7 = NOTE_ENTRY(3322),
+	NOTE_A7  = NOTE_ENTRY(3520),
+	NOTE_AS7 = NOTE_ENTRY(3729),
+	NOTE_B7  = NOTE_ENTRY(3951),
+	NOTE_C8	 = NOTE_ENTRY(4186),
+	NOTE_CS8 = NOTE_ENTRY(4435),
+	NOTE_D8	 = NOTE_ENTRY(4699),
 	NOTE_DS8 = NOTE_ENTRY(4978),
 
-    	REST = 0  // DO NOT SOUND
+	REST = 0	// DO NOT SOUND
 } FREQUENCY;
 
 // Structure to represent a note with frequency and duration
 typedef struct 
 {
-	FREQUENCY freq;      		// The frequency of the note
-	NOTE_DURATION duration;  	// The duration of the note
+	FREQUENCY freq;				// The frequency of the note
+	NOTE_DURATION duration;		// The duration of the note
 } NOTE;
 
 // Function to play a note (with frequency and duration)
