@@ -21,71 +21,69 @@
 ** Returned value:		None
 **
 ******************************************************************************/
-// beat 1/4 = 1.65/4 seconds
-#define RIT_SEMIMINIMA 8
-#define RIT_MINIMA 16
-#define RIT_INTERA 32
-
 #define UPTICKS 1
 
 
 //SHORTENING UNDERTALE: TOO MANY REPETITIONS
 NOTE song[] = 
 {
-	// 1
-	{d3, time_semicroma},
-	{d3, time_semicroma},
-	{d4, time_croma},
-	{a3, time_croma},
-	{pause, time_semicroma},
-	{a3b, time_semicroma},
-	{pause, time_semicroma},
-	{g3, time_croma},
-	{f3, time_semicroma*2},
-	{d3, time_semicroma},
-	{f3, time_semicroma},
-	{g3, time_semicroma},
-	// 2
-	{c3, time_semicroma},
-	{c3, time_semicroma},
-	{d4, time_croma},
-	{a3, time_croma},
-	{pause, time_semicroma},
-	{a3b, time_semicroma},
-	{pause, time_semicroma},
-	{g3, time_croma},
-	{f3, time_semicroma*2},
-	{d3, time_semicroma},
-	{f3, time_semicroma},
-	{g3, time_semicroma},
-	// 3
-	{c3b, time_semicroma},
-	{c3b, time_semicroma},
-	{d4, time_croma},
-	{a3, time_croma},
-	{pause, time_semicroma},
-	{a3b, time_semicroma},
-	{pause, time_semicroma},
-	{g3, time_croma},
-	{f3, time_semicroma*2},
-	{d3, time_semicroma},
-	{f3, time_semicroma},
-	{g3, time_semicroma},
-	// 4
-	{a2b, time_semicroma},
-	{a2b, time_semicroma},
-	{d4, time_croma},
-	{a3, time_croma},
-	{pause, time_semicroma},
-	{a3b, time_semicroma},
-	{pause, time_semicroma},
-	{g3, time_croma},
-	{f3, time_semicroma*2},
-	{d3, time_semicroma},
-	{f3, time_semicroma},
-	{g3, time_semicroma},
-	// 5
-	
+		// 1
+	{NOTE_D3, time_16th},
+	{NOTE_D3, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 2
+	{NOTE_C3, time_16th},
+	{NOTE_C3, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 3
+	{NOTE_C3B, time_16th},
+	{NOTE_C3B, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 4
+	{NOTE_GS2, time_16th},
+	{NOTE_GS2, time_16th},
+	{NOTE_D4, time_8th},
+	{NOTE_A3, time_8th},
+	{REST, time_16th},
+	{NOTE_GS3, time_16th},
+	{REST, time_16th},
+	{NOTE_G3, time_8th},
+	{NOTE_F3, time_16th * 2},
+	{NOTE_D3, time_16th},
+	{NOTE_F3, time_16th},
+	{NOTE_G3, time_16th},
+
+		// 5 (remaining part of the song)
 };
 
 void RIT_IRQHandler (void)
@@ -106,7 +104,7 @@ void RIT_IRQHandler (void)
 	{
 		disable_RIT();
 	}
-  LPC_RIT->RICTRL |= 0x1;	/* clear interrupt flag */
+	LPC_RIT->RICTRL |= 0x1;	/* clear interrupt flag */
 }
 /******************************************************************************
 **                            End Of File
