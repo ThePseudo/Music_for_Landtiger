@@ -1,87 +1,0 @@
-Dependencies for Project 'sample', Target 'Target 1': (DO NOT MODIFY !)
-F (.\startup_LPC17xx.s)(0x4CCAADFA)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\startup_lpc17xx.lst --xref -o .\startup_lpc17xx.o --depend .\startup_lpc17xx.d)
-F (.\sample.c)(0x5C4236EC)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\sample.o --omf_browse .\sample.crf --depend .\sample.d)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C819B4)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.H)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (led/led.h)(0x54294EB4)
-I (RIT/RIT.h)(0x5C4233C3)
-F (.\core_cm3.c)(0x4AC99CCC)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\core_cm3.o --omf_browse .\core_cm3.crf --depend .\core_cm3.d)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-F (.\system_LPC17xx.c)(0x5C4B10C5)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\system_lpc17xx.o --omf_browse .\system_lpc17xx.crf --depend .\system_lpc17xx.d)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-F (.\led\funct_led.c)(0x5C05B843)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\funct_led.o --omf_browse .\funct_led.crf --depend .\funct_led.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (led\led.h)(0x54294EB4)
-F (.\led\lib_led.c)(0x5C0779E9)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\lib_led.o --omf_browse .\lib_led.crf --depend .\lib_led.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (led\led.h)(0x54294EB4)
-F (.\led\led.h)(0x54294EB4)()
-F (.\timer\IRQ_timer.c)(0x5C4B27F9)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\irq_timer.o --omf_browse .\irq_timer.crf --depend .\irq_timer.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (timer\timer.h)(0x5C42D2F1)
-I (timer\../music/music.h)(0x5C4B1E8B)
-F (.\timer\lib_timer.c)(0x5C423642)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\lib_timer.o --omf_browse .\lib_timer.crf --depend .\lib_timer.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (timer\timer.h)(0x5C42D2F1)
-I (timer\../music/music.h)(0x5C4B1E8B)
-F (.\timer\timer.h)(0x5C42D2F1)()
-F (.\RIT\IRQ_RIT.c)(0x5C4B1F9D)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\irq_rit.o --omf_browse .\irq_rit.crf --depend .\irq_rit.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (RIT\RIT.h)(0x5C4233C3)
-I (RIT\../led/led.h)(0x54294EB4)
-I (RIT\../timer/timer.h)(0x5C42D2F1)
-I (RIT\../timer/../music/music.h)(0x5C4B1E8B)
-F (.\RIT\lib_RIT.c)(0x5C1ABDCD)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\lib_rit.o --omf_browse .\lib_rit.crf --depend .\lib_rit.d)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
-I (RIT\RIT.h)(0x5C4233C3)
-F (.\RIT\RIT.h)(0x5C4233C3)()
-F (.\music\music.h)(0x5C4B1E8B)()
-F (.\music\music.c)(0x5C4AC8AB)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\music.o --omf_browse .\music.crf --depend .\music.d)
-I (music\music.h)(0x5C4B1E8B)
-I (music\../timer/timer.h)(0x5C42D2F1)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x532C567C)
-I (C:\Keil\ARM\RV31\INC\core_cm3.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
-I (C:\Keil\ARM\RV31\INC\core_cmInstr.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\RV31\INC\core_cmFunc.h)(0x4CCA9F6C)
-I (C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x532C567C)
