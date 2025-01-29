@@ -11,7 +11,7 @@
 #define __TIMER_H
 
 #include "../music/music.h"
-#include "lpc17xx.h"
+#include "LPC17xx.h"
 
 /* init_timer.c */
 extern unsigned int init_timer( char timer_num, unsigned int timerInterval );
